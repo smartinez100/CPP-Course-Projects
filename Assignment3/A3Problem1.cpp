@@ -1,9 +1,17 @@
 #include <iostream>
 
 using namespace std;
-
+/**
+ * Purpose: Find the amount of values within the array that are larger than the average
+ * 
+ * @param nums the array tied with the average
+ * @param size the size of array
+ * @param average the calculated average of array
+ * @return the amount of values larger than average
+ */
 int countAboveAverage(int nums[], int size, double average)
 {
+    
     int countNumsLarger = 0;
 
     for(int i = 0; i < size; i++)
@@ -16,7 +24,12 @@ int countAboveAverage(int nums[], int size, double average)
 
     return countNumsLarger;
 }
-
+/**
+ * Purpose: Find the largest number within an array
+ * @param nums the array to scan
+ * @param size the size of array
+ * @return the largest number
+ */
 int findLargest(int nums[], int size)
 {
     int largestNum = nums[0];
@@ -29,7 +42,12 @@ int findLargest(int nums[], int size)
     }
     return largestNum;
 }
-
+/**
+ * Purpose: Display the values within an array
+ * 
+ * @param nums the array to display
+ * @param size the size of the array
+ */
 void displayValues(int nums[], int size)
 {
     for(int i = 0; i < size; i++)
@@ -42,7 +60,12 @@ void displayValues(int nums[], int size)
         cout << nums[i] << ", ";
     }
 }
-
+/**
+ * Purpose: Insert values into an array from the user
+ * 
+ * @param nums the array to modify
+ * @param size the size of the aray
+ */
 void readValues(int nums[], int size)
 {
     
@@ -52,6 +75,13 @@ void readValues(int nums[], int size)
         cin >> nums[i];
     }
 }
+/**
+ * Purpose: Calculate the average of the array values 
+ * 
+ * @param nums the array with values
+ * @param size the size of array
+ * @return the average of the array values
+ */
 double calculateAverage(int nums[], int size)
 {
     double sum = 0;
